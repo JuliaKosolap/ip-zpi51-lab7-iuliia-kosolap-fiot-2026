@@ -1,9 +1,12 @@
 /* empty css              */import"./modulepreload-polyfill-Dezn_h7o.js";document.querySelector(`#app`).innerHTML=`
 <div class="page">
 
-  <a href="/" class="back-btn">
-    ← На головну
-  </a>
+ <a
+  href="/ip-zpi51-lab7-iuliia-kosolap-fiot-2026/"
+  class="back-btn"
+>
+  ← На головну
+</a>
 
   <h1>Генератор промісів</h1>
 

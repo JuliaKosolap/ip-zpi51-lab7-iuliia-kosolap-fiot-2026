@@ -5,9 +5,12 @@ import{i as e,r as t,t as n}from"./chunk-aKtaBQYM.js";/* empty css              
 	`),a=n.querySelector(`.basicLightbox__placeholder`);e.forEach((function(e){return a.appendChild(e)}));var o=i(a,`IMG`),s=i(a,`VIDEO`),c=i(a,`IFRAME`);return!0===o&&n.classList.add(`basicLightbox--img`),!0===s&&n.classList.add(`basicLightbox--video`),!0===c&&n.classList.add(`basicLightbox--iframe`),n}(e=function(e){var t=typeof e==`string`,n=e instanceof HTMLElement==1;if(!1===t&&!1===n)throw Error(`Content must be a DOM element/node or string`);return!0===t?Array.from(r(e,!0)):e.tagName===`TEMPLATE`?[e.content.cloneNode(!0)]:Array.from(e.children)}(e),t=function(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:{};if((e=Object.assign({},e)).closable??(e.closable=!0),e.className??=``,e.onShow??=function(){},e.onClose??=function(){},typeof e.closable!=`boolean`)throw Error("Property `closable` must be a boolean");if(typeof e.className!=`string`)throw Error("Property `className` must be a string");if(typeof e.onShow!=`function`)throw Error("Property `onShow` must be a function");if(typeof e.onClose!=`function`)throw Error("Property `onClose` must be a function");return e}(t)),o=function(e){return!1!==t.onClose(s)&&function(e,t){return e.classList.remove(`basicLightbox--visible`),setTimeout((function(){return!1===a(e)||e.parentElement.removeChild(e),t()}),410),!0}(n,(function(){if(typeof e==`function`)return e(s)}))};!0===t.closable&&n.addEventListener(`click`,(function(e){e.target===n&&o()}));var s={element:function(){return n},visible:function(){return a(n)},show:function(e){return!1!==t.onShow(s)&&function(e,t){return document.body.appendChild(e),setTimeout((function(){requestAnimationFrame((function(){return e.classList.add(`basicLightbox--visible`),t()}))}),10),!0}(n,(function(){if(typeof e==`function`)return e(s)}))},close:o};return s}},{}]},{},[1])(1)}))}))(),1);document.querySelector(`#app`).innerHTML=`
 <div class="page">
 
-  <a href="/" class="back-btn">
-    ← На головну
-  </a>
+<a
+  href="/ip-zpi51-lab7-iuliia-kosolap-fiot-2026/"
+  class="back-btn"
+>
+  ← На головну
+</a>
 
   <h1>Галерея зображень</h1>
 

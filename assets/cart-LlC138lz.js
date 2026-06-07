@@ -1,6 +1,9 @@
 /* empty css              */import"./modulepreload-polyfill-Dezn_h7o.js";var e=[{id:1,name:`Product 1`,price:100},{id:2,name:`Product 2`,price:150},{id:3,name:`Product 3`,price:200},{id:4,name:`Product 4`,price:250},{id:5,name:`Product 5`,price:300},{id:6,name:`Product 6`,price:350},{id:7,name:`Product 7`,price:400},{id:8,name:`Product 8`,price:450},{id:9,name:`Product 9`,price:500},{id:10,name:`Product 10`,price:550},{id:11,name:`Product 11`,price:600},{id:12,name:`Product 12`,price:650}],t=6;document.querySelector(`#app`).innerHTML=`
 <div class="page">
-<a href="/" class="back-btn">
+<a
+  href="/ip-zpi51-lab7-iuliia-kosolap-fiot-2026/"
+  class="back-btn"
+>
   ← На головну
 </a>
 <h1>Кошик товарів</h1>
