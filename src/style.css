@@ -1,0 +1,471 @@
+/* ===== BASE ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* ===== HOME PAGE ===== */
+
+.home-container {
+  min-height: 100vh;
+
+  padding: 50px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #1e1b4b,
+    #312e81,
+    #4338ca
+  );
+
+  text-align: center;
+}
+
+.home-container h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #dbeafe;
+
+  max-width: 900px;
+
+  margin: 0 auto 50px;
+
+  font-size: 20px;
+
+  line-height: 1.5;
+}
+
+.cards {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 20px;
+
+  padding: 30px 20px;
+
+  text-decoration: none;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+/* ===== COMMON PAGES ===== */
+
+.page {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px;
+}
+
+.page h1 {
+  color: #1e1b4b;
+
+  margin-bottom: 30px;
+
+  font-size: 48px;
+}
+
+.back-btn {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  margin-bottom: 40px;
+
+  background: #4338ca;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #312e81;
+}
+
+button {
+  background: #4338ca;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #312e81;
+}
+
+/* ===== FORM ===== */
+
+.form-container {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.feedback-form,
+.form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.feedback-form label,
+.form label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-weight: 600;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.form input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+}
+
+.feedback-form button,
+.form button {
+  width: fit-content;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 15px;
+}
+
+fieldset label {
+  margin-right: 20px;
+}
+
+/* ===== TIMER ===== */
+
+.timer-wrapper {
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 30px;
+
+  margin-top: 30px;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.timer-controls {
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+.timer-controls input {
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  width: 260px;
+}
+
+.timer-controls button {
+  padding: 12px 24px;
+}
+
+.timer {
+  display: flex;
+
+  gap: 40px;
+}
+
+.timer div {
+  text-align: center;
+}
+
+.timer span {
+  font-size: 56px;
+
+  font-weight: 700;
+
+  color: #312e81;
+
+  display: block;
+}
+
+.timer p {
+  margin-top: 8px;
+
+  font-size: 16px;
+
+  color: #555;
+}
+
+/* ===== GALLERY ===== */
+
+.gallery {
+  list-style: none;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  padding: 0;
+
+  margin-top: 30px;
+}
+
+.gallery-image {
+  width: 250px;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+/* ===== SEARCH ===== */
+
+.search-form {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.search-form input {
+  width: 350px;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+}
+
+/* ===== CART ===== */
+
+.products {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+
+  margin: 30px 0;
+}
+
+.product-card {
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.product-card h3 {
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin: 30px 0;
+}
+
+.page-btn {
+  padding: 10px 16px;
+}
+
+.cart-list {
+  list-style: none;
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cart-list li {
+  padding: 8px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.cart-list li:last-child {
+  border-bottom: none;
+}
+/* ===== PROMISE ===== */
+
+.form {
+  max-width: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.form label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-weight: 600;
+}
+
+.form input[type="number"] {
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 15px;
+}
+
+fieldset label {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-right: 20px;
+
+  font-weight: normal;
+}
+
+.form button {
+  width: fit-content;
+
+  padding: 12px 24px;
+}
